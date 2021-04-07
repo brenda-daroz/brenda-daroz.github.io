@@ -219,21 +219,21 @@
       padding: 10px;
     }
 
-    @media (max-width: 800px) {
+    @media (max-width: 360px) {
       .nav > a {
         
         align-items: center;
         flex-grow: inherit;
       }
 
-    @media (max-width: 800px) {
+    @media (max-width: 360px) {
       .nav-main {
         flex-direction: column;
         width: 100%;
         align-items: center;
       }
 
-      @media (max-width: 800px) {
+      @media (max-width: 360px) {
         header {
           flex-direction: column;
         }
