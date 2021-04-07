@@ -168,7 +168,7 @@
       display: block;
     }
     
-    nav > a {
+    .nav > a {
       display: flex;
       justify-content: space-between;
       width: 100%;
@@ -177,7 +177,7 @@
       margin: 0px;
     }
 
-    nav ul {
+    .nav ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
@@ -188,7 +188,7 @@
       font-size: 16px;
     }
 
-    nav ul li {
+    .nav ul li {
       list-style-type: none;
       cursor: pointer;
       padding: 0.5rem;
@@ -198,7 +198,7 @@
       
     }
 
-    nav ul li:hover {
+    .nav ul li:hover {
       background-color: rgb(204, 204, 204);
       color: rgb(255, 255, 255);
     }
@@ -221,7 +221,7 @@
 
     @media (max-width: 360px) {
       .nav > a {
-        
+        min-width: 500px;
         align-items: center;
         flex-grow: inherit;
       }
@@ -237,6 +237,12 @@
         header {
           flex-direction: column;
         }
+
+        @media (max-width: 360px) {
+          .image-container{
+            flex-direction: column;
+            justify-items: center ;
+          }
    
 
     
