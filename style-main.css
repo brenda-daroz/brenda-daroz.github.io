@@ -1,0 +1,224 @@
+    * {
+      font-family: 'Raleway', sans-serif;
+    }    
+    header {
+        display: flex;
+        justify-content: center;
+        margin: 10px 90px 10px 90px;
+        padding: 20px;
+        align-items: center;
+        color: rgb(5, 5, 5);
+        
+    }
+
+    input {
+      font-size: 1rem;
+      margin: 0 0 0 0.5rem;
+      width: 100%;
+      border: none;
+      outline: none;
+      color: black;
+      background-color: rgb(255, 255, 255);
+      font-style: italic;
+
+    }
+
+    .input-wrapper {
+      display: flex;
+      align-items: center;
+      flex: 0.5;
+      justify-content: space-between;
+      width: 200px;
+      height: 25px;
+      padding: 0.3rem;
+      background-color: rgb(255, 255, 255);
+      border-radius: 0.6rem;
+      color: black;
+      border: solid 1px black;
+      
+    }
+
+    ::placeholder {
+       color:rgb(92, 92, 92);
+    }
+
+    .fa-twitter:hover, .fa-instagram:hover {
+      color:#1F6117;
+      opacity: 0.7;
+      transform: scale(1.2);
+      
+    }
+
+    .social-media-button {
+      display: flex;
+      flex: 0.5;
+      justify-content: space-evenly;
+    }
+
+    .fa-instagram, .fa-twitter {
+      font-size: 30px;
+      width: 50px;
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      transition: transform .2s;
+    }
+    
+
+    .logo {
+      display: flex;
+      flex: 3;
+      justify-content: center;
+      margin: 0px;
+      padding: 0px;
+      text-transform: capitalize;
+    }
+
+    
+    
+    .image-container {
+        display: flex;
+        flex-wrap: wrap;
+       
+        margin: 40px 0px 10px 0px;
+        padding: 0px;
+        justify-content: space-between;
+        align-content: center;
+       
+        
+    }
+
+    .column-container {
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: space-between;
+      
+       
+       
+    }
+  
+    .blueberry-pie, .mac-and-cheese{
+      flex-grow:0;
+      flex-shrink:0;
+      flex-basis: calc(50% - 50px); /* separate properties for IE11 upport */
+    }
+
+
+    .sourdough {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .image1 {
+      width: 620px;
+      height: 450px;
+  }
+
+    .image2, .image3 {
+      width: 250px;
+      height: 200px;
+    }
+    
+    .caption1, .caption2, .caption3 {
+      display: block;
+    }
+
+    p {
+      padding: 0;
+      margin-top: 5px;
+    }
+
+    .nav-main {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin: 0px 150px 0px 150px;
+    }
+    
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f1f1f1;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      
+      
+    }
+    
+    .dropdown-content a:hover {
+      background-color: rgba(31, 97, 23, 0.2);
+    }
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    
+    nav {
+      
+      font-size: 1rem;
+      background-color: #ffffff;
+      margin: 0px;
+    }
+
+    nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: space-around;
+      border-top: solid 2px black;
+      border-bottom: solid 2px black;
+      font-size: 16px;
+    }
+
+    nav ul li {
+      list-style-type: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      flex: auto;
+      text-align: center;
+      flex: 1;
+      
+    }
+
+    nav ul li:hover {
+      background-color: rgb(204, 204, 204);
+      color: rgb(255, 255, 255);
+    }
+
+    a:link {
+      text-decoration: none;
+      color: black;
+    }
+
+    a:visited {
+      color: black;
+    }
+
+
+    .recipe-title {
+      display:flex;
+      justify-content: center;
+      padding: 10px;
+    }
+
+   
+
+    
+    
+   
+
+    
