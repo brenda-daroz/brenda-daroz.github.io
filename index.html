@@ -1,88 +1,66 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Receita</title>
-</head>
-<div class="header">
-    <h1>RECEITINHAS</h1>
-    <p>Contém minhas receitas favoritas.</p>
-  </div>
-  
-<body>
-    <style>
-        body {
-          font-family: 'Courier New', monospace;
-          margin: 0;
-        }
-        
-        /* Style the header */
-        .header {
-          padding: 260px;
-          text-align: center;
-          background: rgba(240, 5, 122, 0.4);
-          color: rgb(5, 5, 5);
-        }
-        
-        /* Increase the font size of the h1 element */
-        .header h1 {
-          font-size: 30px;
-        }
+<html lang="pt-BR">
 
-        ul {
-              list-style-type: none;
-              margin: 0;
-              padding: 0;
-              overflow: hidden;
-              border: 1px solid #e7e7e7;
-              background-color: #cecaca;
-            }
-            
-            li {
-              float: left;
-              font-size: 18px;
-            }
-            
-            li a {
-              display: block;
-              color: rgb(15, 1, 1);
-              text-align: left;
-              padding: 10px 22vw;
-              text-decoration: none;
-            }
-            
-            li a:hover {
-              background-color: rgb(104, 100, 100);
-            }
-            /*
-            .flex-container {
-              display: flex;
-              flex-direction: row;
-              background-color: rgb(180, 184, 189);
-              }
-              
-              .flex-container > div {
-                background-color: #f1f1f1;
-                width: 100px;
-                margin: 10px;
-                text-align: center;
-                line-height: 75px;
-                font-size: 30px;
-                }
-                */
-            </style>
-            </head>
-            <body>
-            
-            <ul>
-              <div class="flex-container">
-                <div><li><a href="pages/doces.html"target="_blank">Doces</a></li>
-                </div>
-                <div><li><a href="pages/salgados2.html"target="_blank">Salgados</a></li>
-                  </div>
-            </ul>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="style" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="style-main.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <title>Receitas da Brenda</title>
+</head>
+
+
+
+  <header id="header">
+
+    <div class="social-media-button">
+      <a href="https://twitter.com/brendadrz" target="_blank" class="fa fa-twitter"></a>
+      <a href="https://www.instagram.com/brenda.daroz/" target="_blank" class="fa fa-instagram"></a>
+    </div>
+    <div class="logo">
+      <h1 id="header-title">Site da Brenda</h1>
+    </div>
+    <div class="input-wrapper">
+      <input type="text" placeholder="Pesquisar">
+      <div class="fa fa-search"></div>
+    </div>
+
+  </header>
+
   
+  <body id="index" class="index">
+  <div id ="nav-main" class="nav-main">
+    <nav>
+      <ul>
+        <li id="pag-in"><a>Página Inicial</a></li>
+        <li id="salgadas" class="dropdown">
+          <a>Receitas Salgadas</a>
+            <div class="dropdown-content">
+              <a class="link-de-receita" id="cheddar-sauce">Molho de Cheddar</a>
+              <a class="link-de-receita" id="hummus">Hummus</a>
+              <a class="link-de-receita" id="nhoque-de-batata">Nhoque de batata</a>
+              <a class="link-de-receita" id="pao-de-queijo">Pão de queijo</a>
+              <a class="link-de-receita" id="queso-sauce-dip">Molho de queso</a>
+              <a class="link-de-receita" id="massa-de-coxinha">Massa de coxinha</a>
+            </div>
+        </li>
+        <li><a>Receitas Doces</a></li>
+        <li><a>Fermentação Natural</a></li>
+      </ul>
+    </nav>
+   
+
+    <main id="main-page" class="main-page">
+      
+    </main>
+
+
 
 </body>
+
 </html>
+
+<script src="script.js"></script>
