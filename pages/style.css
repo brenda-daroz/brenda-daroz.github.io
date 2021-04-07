@@ -1,0 +1,105 @@
+    * {
+        font-family: 'Courier New', monospace;
+    }
+
+
+    .item1 { grid-area: header; }
+    .item2 { grid-area: navbar; }
+    .item3 { grid-area: main; }
+
+    .grid-container {
+        display: grid;
+        height: 100vh;
+        margin: 0;
+        grid-template-columns: 1fr 6fr;
+        grid-template-rows: 1fr 3fr;
+        grid-template-areas: 
+        'header header'
+        'navbar main';
+    }
+
+    .grid-container > div {
+        text-align: center;
+        font-size: 30px;
+        border: 1px solid black;
+    }
+
+    .logo {
+        padding: 5px;
+        align-content: center;
+    }
+
+    .item2 {
+        display: flex;
+        flex-direction: column;
+        padding: 2px;
+    }
+
+    .navbarlinks {
+        width: 100%;
+        padding: 3px;
+        font-size: 15px;
+        border-radius: 10px;
+        background-color: rgba(91, 122, 83, 0.308);
+    }
+
+   
+    .navbarlinks:hover {
+        background-color: rgb(138, 135, 135);
+        border-radius: 10px;
+    }
+        
+     .receita-container {
+         display: flex;
+         padding: 0px;
+         margin: 10px;
+         flex-direction: row;
+         justify-content: space-evenly;   
+    }
+
+     .blurred:after {
+        content: "";
+        background: white;
+        position: absolute;
+        padding: 10px;
+        box-shadow: inset 0 0 0 200px rgba(255,255,255,0.05);
+        width: inherit;
+        height: inherit;
+        filter: blur(1px);
+        top: 0;
+        left: 0;
+    }
+
+    .sessao-da-receita.preparo.blurred:after {
+        z-index: -2;
+        background: linear-gradient(
+        to right bottom, 
+         rgba(255, 255, 255, 0.2), 
+         rgba(255, 255, 255, 0.6)
+        );   
+    }
+
+    .sessao-da-receita.ingredientes.blurred:after {
+        z-index: -2;
+        background: linear-gradient(
+        to right bottom, 
+         rgba(255, 255, 255, 0.2), 
+         rgba(255, 255, 255, 0.6)
+        );
+    }
+
+     
+     .sessao-da-receita {
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 15px;
+        border: white;
+        width: 300px;
+        height: 400px; 
+        z-index: 5;
+        position: relative;
+    }
+     
+  
