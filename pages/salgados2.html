@@ -3,90 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Receita</title>
-</head>
-<div class="header">
-    <h1>RECEITINHAS salgadas</h1>
-  </div>
-  <body>
-      <style>
-          body {
-          font-family: 'Courier New', monospace;
-          margin: 0;
-        }
-        .header {
-          padding: 20px;
-          text-align: center;
-          background: rgba(221, 46, 134, 0.4);
-          color: rgb(5, 5, 5);
-        }
-        
-        /* Increase the font size of the h1 element */
-        .header h1 {
-          font-size: 30px;
-        }
+    <link rel="stylesheet" href="style.css">
+    <title>Receitas da Brenda</title>
+</head> 
 
-        /* Style the tab */
-        .tab {
-            float: left;
-            border: 1px solid #ccc;
-            background-color: #f1f1f1;
-            width: 30%;
-            height: 300px;
-            }
-            /* Style the buttons inside the tab */
-        .tab button {
-            display: block;
-            background-color: inherit;
-            color: black;
-            padding: 22px 16px;
-            width: 100%;
-            border: none;
-            outline: none;
-            text-align: left;
-            cursor: pointer;
-            transition: 0.3s;
-            font-size: 17px;
-            }
-            /* Change background color of buttons on hover */
-.tab button:hover {
-  background-color: #ddd;
-}
+<body>
+    <div class="grid-container">
+    <div class="item1">
+        <div class=><img src="Logo.png" alt="Recipe Logo"></div>
+        <p>Contém minhas receitas favoritas.</p>
+    </div>
+    
 
-/* Create an active/current "tab button" class */
-.tab button.active {
-  background-color: #ccc;
-}
 
-/* Style the tab content */
-.tabcontent {
-  float: left;
-  padding: 0px 10px;
-  width: 40%;
-  height: 440px;
-}
-</style>
-
-<div class="tab">
-    <button class="tablinks" onclick="openRecipe(event, 'Cheddar Sauce')" id="defaultOpen">Cheddar Sauce</button>
-    <button class="tablinks" onclick="openRecipe(event, 'Hummus')">Hummus</button>
-    <button class="tablinks" onclick="openRecipe(event, 'Massa de pizza')">Massa de pizza</button>
-    <button class="tablinks" onclick="openRecipe(event, 'Nhoque de batata')">Nhoque de batata</button>
-    <button class="tablinks" onclick="openRecipe(event, 'Pão de queijo')">Pão de queijo</button>
-    <button class="tablinks" onclick="openRecipe(event, 'Queso Sauce Dip')">Queso Sauce Dip</button>
-    <button class="tablinks" onclick="openRecipe(event, 'Massa de coxinha')">Massa de coxinha</button>
+<div class="item2">
+    <div class="navlist">
+    <button class="navbarlinks" onclick="openRecipe(event, 'Cheddar Sauce')" id="defaultOpen">Cheddar Sauce</button>
+    <button class="navbarlinks" onclick="openRecipe(event, 'Hummus')">Hummus</button>
+    <button class="navbarlinks" onclick="openRecipe(event, 'Massa de pizza')">Massa de pizza</button>
+    <button class="navbarlinks" onclick="openRecipe(event, 'Nhoque de batata')">Nhoque de batata</button>
+    <button class="navbarlinks" onclick="openRecipe(event, 'Pão de queijo')">Pão de queijo</button>
+    <button class="navbarlinks" onclick="openRecipe(event, 'Queso Sauce Dip')">Queso Sauce Dip</button>
+    <button class="navbarlinks" onclick="openRecipe(event, 'Massa de coxinha')">Massa de coxinha</button>
+</div>
 </div>
 
-  <div id="Cheddar Sauce" class="tabcontent">
-    <h3>Ingredientes</h3>
-    <p>57 g manteiga<br />
-        30 g farinha<br />
-        225 queijo Cheddar<br />
-        480 mL leite<br />
-        225 g macarrão<br /></p>
-  </div>
 
-  <div id="Hummus" class="tabcontent">
+
+<div id="Cheddar Sauce" class="item3">
+    <div class="receita-container">
+        <div class="sessao-da-receita ingredientes blurred">
+            <div><h3>Ingredientes</h3>
+            <p>57 g manteiga<br />
+                30 g farinha<br />
+                225 queijo Cheddar<br />
+                480 mL leite<br />
+                225 g macarrão<br />
+            </p></div>
+        </div>
+        <div class="sessao-da-receita preparo blurred">
+            <div><h3>Modo de preparo:</h3>
+            <p>Colocar manteiga numa panela.</p></div>
+            </div>
+            </div>
+        </div>
+
+    
+
+  <div id="Hummus" class="item3">
+    <div class="ingredientes">
+        <div>
     <h3>Ingredientes</h3>
     <p>250 g grão de bico cozido<br />
         60 mL suco de limão<br />
@@ -95,9 +61,19 @@
         30 mL de azeite<br />
         1/2 colher de chá de cominho<br />
         sal a gosto<br />
+        </p>
+    </div>
+        </div>
   </div>
 
-  <div id="Massa de pizza" class="tabcontent">
+
+  <div id="Hummus" class="item3">
+   {%receita%}
+  </div>
+
+  <div id="Massa de pizza" class="item3">
+    <div class="ingredientes">
+        <div>
     <h3>Ingredientes</h3>
     <p>3 xícaras de farinha<br />
         10 g fermento biologico seco<br />
@@ -106,17 +82,27 @@
         1/8 xicara de azeite<br />
         Farinha polvilhar mesa<br />
         Azeite para untar tigela<br />
+    </div>
+        <div><h3>Modo de preparo</h3></div>
+    
+</div>
   </div>
 
-  <div id="Nhoque de batata" class="tabcontent">
+  <div id="Nhoque de batata" class="item3">
+    <div class="ingredientes">
+        <div>
     <h3>Ingredientes</h3>
     <p>500 g batata asterix<br />
         100 g de parmesão<br />
         100 g farinha<br />
         Sal, pimenta do reina e noz moscada a gosto<br />
+    </div>
+</div>
   </div>
 
-  <div id="Pão de queijo" class="tabcontent">
+  <div id="Pão de queijo" class="item3">
+    <div class="ingredientes">
+        <div>
     <h3>Ingredientes</h3>
     <p>600 mL de água<br />
         1 1/2 xícara chá de óleo<br />
@@ -125,9 +111,13 @@
         1 kg polvilho azedo (ou 1/2 kg doce e 1/2 g azedo)<br />
         6 ovos<br />
         300 g parmesão ralado<br />
+    </div>
+</div>
   </div>
 
-  <div id="Queso Sauce Dip" class="tabcontent">
+  <div id="Queso Sauce Dip" class="item3">
+    <div class="ingredientes">
+    <div>
     <h3>Ingredientes</h3>
     <p>130 g queijo industrializado (polenghi)<br />
         40 mL água<br />
@@ -137,9 +127,13 @@
         1/2 colher sopa suco jalapeño<br />
         Sal<br />
         Cominho em pó<br />
+    </div>
+    </div>
   </div>
 
-  <div id="Massa de coxinha" class="tabcontent">
+  <div id="Massa de coxinha" class="item3">
+    <div class="ingredientes">
+        <div>
     <h3>Ingredientes</h3>
     <p>1 xícara de agua<br />
         1 1/2 xicara de leite<br />
@@ -147,18 +141,22 @@
         2 batatas cozidas e amassadas<br />
         Tempero (caldo knorr)<br />
         Farinha atá a massa nao grudar<br />
+    </div>
+</div>
   </div>
+</div>
+
 
   <script>
-    function openRecipe(ingredients, recipeName) {
-      var i, tabcontent, tablinks;
-      tabcontent = document.getElementsByClassName("tabcontent");
-      for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
+    function openRecipe(evt, recipeName) {
+      var i, item3, navbarlinks;
+      item3 = document.getElementsByClassName("item3");
+      for (i = 0; i < item3.length; i++) {
+        item3[i].style.display = "none";
       }
-      tablinks = document.getElementsByClassName("tablinks");
-      for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      navbarlinks = document.getElementsByClassName("navbarlinks");
+      for (i = 0; i < navbarlinks.length; i++) {
+        navbarlinks[i].className = navbarlinks[i].className.replace(" active", "");
       }
       document.getElementById(recipeName).style.display = "block";
       evt.currentTarget.className += " active";
