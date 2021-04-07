@@ -74,7 +74,21 @@ const massaDeCoxinha = {
         "1 1/2 colher de manteiga",
         "2 batatas cozidas e amassadas",
         "Tempero (caldo knorr)",
-        "Farinha atá a massa nao grudar",
+        "Farinha até a massa nao grudar",
+    ],
+    directions: ""
+}
+
+const massaDePizza = {
+    title: "Massa de pizza",
+    ingredients: [
+        "3 xícaras de farinha",
+        "10 g fermento biológico",
+        "1 col chá sal",
+        "1 1/4 xícara água morna",
+        "1/8 xícara de azeite",
+        "Farinha para polvilhar superfície",
+        "Azeite para untar tigela"
     ],
     directions: ""
 }
@@ -132,6 +146,38 @@ const boloDeCenoura = {
         "400 g de açúcar",
         "320 g farinha",
         "1 col sopa de fermento",
+    ],
+    directions: ""
+}
+
+const cookie = {
+    title: "Cookie",
+    ingredients: [
+        "90 g açúcar",
+        "135 g açúcar mascavo",
+        "100 mL manteiga derretida",
+        "1 ovo",
+        "1 col chá baunilha",
+        "160 g farinha",
+        "1/2 colher chá sal",
+        "1 barra chocolate meio amargo",
+        "1 barra chocolate ao leite",
+    ],
+    directions: ""
+}
+
+const boloDeNozes = {
+    title: "Bolo de nozes",
+    ingredients: [
+        "1 1/4 xic farinha (remover 1 1/2 colher sopa",
+        "2 2/1 colher sopa amido de milho",
+        "1 xic açúcar",
+        "3/8 xic óleo",
+        "1 1/4 col chá fermento",
+        "1.2 col chá baunilha",
+        "1/4 col chá sal",
+        "2 ovos",
+        "1/2 xic leite",
     ],
     directions: ""
 }
@@ -265,11 +311,14 @@ function inicioDeTudo() {
     document.getElementById("pao-de-queijo").onclick = function () { renderRecipe(paoDeQueijo) }
     document.getElementById("queso-sauce-dip").onclick = function () { renderRecipe(quesoSauceDip) }
     document.getElementById("massa-de-coxinha").onclick = function () { renderRecipe(massaDeCoxinha) }
+    document.getElementById("massa-de-pizza").onclick = function () { renderRecipe(massaDePizza) }
     
     document.getElementById("panqueca-americana").onclick = function () { renderRecipe(panquecaAmericana) }
     document.getElementById("pipoca-doce").onclick = function () { renderRecipe(pipocaDoce) }
     document.getElementById("muffin-de-banana").onclick = function () { renderRecipe(muffinDeBanana) }
     document.getElementById("bolo-de-cenoura").onclick = function () { renderRecipe(boloDeCenoura) }
+    document.getElementById("bolo-de-nozes").onclick = function () { renderRecipe(boloDeNozes) }
+    document.getElementById("cookie").onclick = function () { renderRecipe(cookie) }
 
     document.getElementsByClassName("link-de-receita-salgada").onclick = function (event) { }
     document.getElementsByClassName("link-de-receita-doce").onclick = function (event) { }
