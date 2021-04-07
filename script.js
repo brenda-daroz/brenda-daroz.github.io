@@ -78,6 +78,63 @@ const massaDeCoxinha = {
     ],
     directions: ""
 }
+
+const pipocaDoce = {
+    title: "Pipoca doce",
+    ingredients: [
+        "70 g pipoca",
+        "30 g nescau",
+        "50 g açucar",
+        "10 mL água",
+        "15 g óleo",
+    ],
+    directions: ""
+}
+
+const panquecaAmericana = {
+    title: "Panqueca americana",
+    ingredients: [
+        "195 g de farinha",
+        "2 col sopa açúcar",
+        "1 col sopa fermento",
+        "1/2 colher chá sal",
+        "295 mL leite",
+        "1 ovo",
+        "4 col sopa manteiga amolecida",
+        "1 col chá baunilha",
+    ],
+    directions: ""
+}
+
+const muffinDeBanana = {
+    title: "Muffin de banana",
+    ingredients: [
+        "50 g manteiga sem sal",
+        "100 g açúcar",
+        "1 ovo",
+        "2 bananas pequenas",
+        "1/2 col chá baunilha",
+        "3/4 cup farinha",
+        "1/4 col chá sal",
+        "1/2 col chá bicarbonato",
+        "Chocolate opcional"
+    ],
+    directions: ""
+}
+
+
+const boloDeCenoura = {
+    title: "Bolo de cenoura",
+    ingredients: [
+        "4 ovos",
+        "240 mL de óleo",
+        "200 g de cenoura",
+        "400 g de açúcar",
+        "320 g farinha",
+        "1 col sopa de fermento",
+    ],
+    directions: ""
+}
 const receitaHTML = `
 <div class="receita-container">
     <h2>Cheddar Sauce</h2>
@@ -208,11 +265,14 @@ function inicioDeTudo() {
     document.getElementById("pao-de-queijo").onclick = function () { renderRecipe(paoDeQueijo) }
     document.getElementById("queso-sauce-dip").onclick = function () { renderRecipe(quesoSauceDip) }
     document.getElementById("massa-de-coxinha").onclick = function () { renderRecipe(massaDeCoxinha) }
+    
+    document.getElementById("panqueca-americana").onclick = function () { renderRecipe(panquecaAmericana) }
+    document.getElementById("pipoca-doce").onclick = function () { renderRecipe(pipocaDoce) }
+    document.getElementById("muffin-de-banana").onclick = function () { renderRecipe(muffinDeBanana) }
+    document.getElementById("bolo-de-cenoura").onclick = function () { renderRecipe(boloDeCenoura) }
 
-    document.getElementsByClassName("link-de-receita").onclick = function (event) {
-
-       
-    }
+    document.getElementsByClassName("link-de-receita-salgada").onclick = function (event) { }
+    document.getElementsByClassName("link-de-receita-doce").onclick = function (event) { }
     
     document.getElementById("pag-in").onclick = function () { renderIndex() }
 
