@@ -1,5 +1,8 @@
 * {
     font-family: 'Raleway', sans-serif;
+    border: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 header {
@@ -10,6 +13,38 @@ header {
     align-items: center;
     color: rgb(5, 5, 5);
     flex-wrap: wrap;
+    width: 90%;
+    margin: auto;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding: 0px;
+    text-transform: capitalize;
+    flex: 3;
+}
+
+.social-media-button {
+    display: flex;
+    margin: auto;
+    justify-content: flex-start;
+    flex: 1;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    height: 25px;
+    padding: 0.3rem;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0.6rem;
+    color: black;
+    border: solid 1px black;
+    flex: 1;
 }
 
 input {
@@ -23,19 +58,6 @@ input {
     font-style: italic;
 }
 
-.input-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex: 0.5;
-    height: 25px;
-    padding: 0.3rem;
-    background-color: rgb(255, 255, 255);
-    border-radius: 0.6rem;
-    color: black;
-    border: solid 1px black;
-}
-
  ::placeholder {
     color: rgb(92, 92, 92);
 }
@@ -47,28 +69,17 @@ input {
     transform: scale(1.2);
 }
 
-.social-media-button {
-    display: flex;
-    flex: 1;
-    justify-content: space-evenly;
+.fa-instagram {
+    margin-left: 30px;
 }
 
-.fa-instagram,
-.fa-twitter {
-    font-size: 30px;
-    width: 50px;
+.fa-twitter,
+.fa-instagram {
+    font-size: 25px;
+    width: 2vw;
     text-decoration: none;
     color: rgb(0, 0, 0);
     transition: transform .2s;
-}
-
-.logo {
-    display: flex;
-    flex: 3;
-    justify-content: center;
-    margin: 0px;
-    padding: 0px;
-    text-transform: capitalize;
 }
 
 .image-container {
@@ -78,6 +89,7 @@ input {
     padding: 0px;
     justify-content: space-between;
     align-content: center;
+    flex: 3;
 }
 
 .column-container {
@@ -90,24 +102,26 @@ input {
 .mac-and-cheese {
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: calc(50% - 50px);
+    width: 60%;
+    flex: 1;
     /* separate properties for IE11 upport */
 }
 
 .sourdough {
-    display: flex;
+    display: inline-flex;
     flex-direction: column;
+    width: 60%;
+    height: 80%;
 }
 
 .image1 {
-    width: 620px;
-    height: 450px;
+    width: 50vw;
+    height: 30vw;
 }
 
 .image2,
 .image3 {
-    width: 250px;
-    height: 200px;
+    width: 20vw;
 }
 
 .caption1,
@@ -133,6 +147,10 @@ p {
     display: inline-block;
 }
 
+.dropbtn {
+    width: 100%;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -153,9 +171,15 @@ p {
     background-color: rgba(31, 97, 23, 0.2);
 }
 
-.dropdown:hover .dropdown-content {
+.show {
     display: block;
 }
+
+
+/*.dropdown:hover .dropdown-content {
+    display: block;
+}
+*/
 
 .nav>a {
     display: flex;
@@ -216,17 +240,38 @@ a:visited {
         flex-direction: column;
         width: 100%;
         align-items: center;
-        background-color: green;
         margin: 0px;
     }
     header {
         flex-direction: column;
+        background-color: lightblue;
+        width: 90%;
+        align-items: center;
+    }
+    .input-wrapper {
+        width: 40%;
+    }
+    .logo {
+        width: 60%;
+    }
+    .social-media-button {
+        width: 40%;
+        justify-content: space-evenly;
     }
     h1 {
-        font-size: 1.5em;
+        font-size: 1em;
     }
     .image-container {
         flex-direction: column;
-        justify-items: center;
+        justify-content: center;
+        background-color: pink;
+    }
+    .column-container {
+        background-color: green;
+    }
+    .fa-instagram,
+    .fa-twitter {
+        width: 2vw;
+        justify-content: center;
     }
 }
